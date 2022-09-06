@@ -1,25 +1,22 @@
-.Header {
+#header {
+  height: 100px;
   background-color: #50b4d2;
-  margin-bottom: 60px;
   color: white;
-  font-size: 10px;
-  padding: 1.2rem;
-  text-align: center;
-  font-weight: bold;
-  /* display: flex;
-  justify-content: center;
-  align-items: flex-end; */
-}
-
-.MyPageBtn {
-  border-style: none;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  background-color: white;
-}
-
-.headertext {
   display: flex;
-  margin-left: 300px;
+  width: 100%;
+  padding: 0px;
+  justify-content: center;
+}
+
+#headerContents {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+
+#headerText {
+  flex: 1;
+  text-align: center;
+  font-size: large;
 }
