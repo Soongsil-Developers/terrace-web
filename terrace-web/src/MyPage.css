@@ -1,0 +1,13 @@
+button:hover {
+  cursor: pointer;
+}
+
+#MyPageBtn {
+  border-style: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
