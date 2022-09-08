@@ -1,0 +1,45 @@
+#openScannerModal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid #50b4d2;
+  background-color: transparent;
+  width: 80px;
+  height: 55px;
+  bottom: 10px;
+  color: #50b4d2;
+  border-radius: 50px;
+}
+
+.modal-content {
+  border-radius: 50px;
+  height: 600px;
+  align-items: center;
+  margin: 0 5%;
+}
+
+#scannerBtn {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#scannerModalTitle {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 0%;
+}
+
+#scannerModalBody {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 10%;
+}
