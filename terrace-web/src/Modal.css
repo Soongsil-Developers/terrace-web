@@ -1,17 +1,35 @@
-#openReserveModal {
+#openModalPossible {
   border: none;
+  padding: 0%;
   background-color: #50b4d2;
-  width: 97.26px;
+  width: 31%;
   height: 55px;
   font-weight: bold;
 }
 
+#openModalImpossible {
+  border: none;
+  padding: 0%;
+  background-color: #b5b5b5;
+  width: 31%;
+  height: 55px;
+  font-weight: bold;
+}
+
+.btnMessage {
+  margin: 0%;
+}
+
+.modal-dialog-centered {
+  justify-content: center;
+}
+
 .modal-content {
   border-radius: 35px;
-  width: 291px;
+  width: 90%;
+  /* width: 250px; */
   height: 324px;
   align-items: center;
-  margin-left: 10%;
 }
 
 .modal-header {
@@ -21,7 +39,7 @@
   width: 90%;
 }
 
-#modalTitle {
+.modalTitle {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0%;
@@ -31,7 +49,7 @@
   padding: 0%;
 }
 
-#modalBody {
+.modalBody {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -41,10 +59,24 @@
   padding-bottom: 10%;
 }
 
+#cancelBtn {
+  background-color: #b5b5b5;
+  width: 40%;
+  height: 90%;
+}
+
 #reserveBtn {
   background-color: #50b4d2;
+  width: 40%;
+  height: 90%;
+}
+
+#okBtn {
+  background-color: #50b4d2;
+  width: 90%;
 }
 
 .modal-footer {
-  width: 90%;
+  width: 80%;
+  justify-content: space-between;
 }
