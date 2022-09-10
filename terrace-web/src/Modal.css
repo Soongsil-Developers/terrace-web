@@ -60,23 +60,26 @@
 }
 
 #cancelBtn {
+  border: none;
   background-color: #b5b5b5;
   width: 40%;
   height: 90%;
 }
 
 #reserveBtn {
+  border: none;
   background-color: #50b4d2;
   width: 40%;
   height: 90%;
 }
 
 #okBtn {
+  border: none;
   background-color: #50b4d2;
   width: 90%;
 }
 
 .modal-footer {
   width: 80%;
-  justify-content: space-between;
+  justify-content: center;
 }
