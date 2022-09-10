@@ -1,0 +1,26 @@
+#mainReserveBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#floor {
+  color: #a4a4a4;
+  margin-left: 3%;
+  font-size: 15px;
+}
+
+#dividingLine {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#floorRoom {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
