@@ -1,45 +1,54 @@
-#openScannerModal {
-  position: fixed;
+#Container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border: solid #50b4d2;
-  background-color: transparent;
+  align-items: center;
+}
+
+#openScannerModalPossible {
+  position: fixed;
+  border: solid rgb(81, 180, 210);
+  background-color: rgba(81, 180, 210, 0.2);
   width: 80px;
   height: 55px;
-  bottom: 10px;
   color: #50b4d2;
-  border-radius: 50px;
+  border-radius: 30px;
+  bottom: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .modal-content {
-  border-radius: 50px;
-  height: 600px;
+  border-radius: 35px;
+  width: 80%;
+  height: 650px;
   align-items: center;
-  margin: 0 5%;
 }
 
-#scannerBtn {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#scannerModalTitle {
-  font-weight: 600;
-  font-size: 22px;
+.ModalTitle {
+  font-weight: 800;
+  font-size: 20px;
   margin-bottom: 0%;
 }
 
-#scannerModalBody {
+.ModalBody {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   height: 100%;
   text-align: center;
   padding-bottom: 10%;
+}
+
+.modal-footer {
+  width: 100%;
+  cursor: pointer;
+}
+
+#closeBtn {
+  background-color: white;
+  color: #b5b5b5;
+  border: none;
 }
