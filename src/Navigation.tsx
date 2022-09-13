@@ -1,6 +1,5 @@
 import "./navigation.css";
 import { useState } from "react";
-//import { withRouter } from "react-router-dom";
 import NavItem from "./navItem";
 
 function Navigation(): JSX.Element {
