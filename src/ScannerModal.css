@@ -1,0 +1,54 @@
+#Container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#openScannerModal {
+  position: fixed;
+  border: solid rgb(81, 180, 210);
+  background-color: rgba(81, 180, 210, 0.2);
+  width: 80px;
+  height: 55px;
+  color: #50b4d2;
+  border-radius: 30px;
+  bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  border-radius: 35px;
+  width: 90%;
+  height: 650px;
+  align-items: center;
+}
+
+.ModalTitle {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+.ModalBody {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.modal-footer {
+  width: 100%;
+  cursor: pointer;
+}
+
+#closeBtn {
+  background-color: white;
+  color: #b5b5b5;
+  border: none;
+}
