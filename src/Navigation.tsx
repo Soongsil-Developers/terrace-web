@@ -1,6 +1,6 @@
-import "./navigation.css";
+import "./navigation.css?after";
 import { useState } from "react";
-import NavItem from "./navItem";
+// import NavItem from "./navItem";
 
 function Navigation(): JSX.Element {
   const [menuToggle, setMenuToggle] = useState<boolean>(false);
@@ -48,9 +48,8 @@ function Navigation(): JSX.Element {
         ].join(" ")}
       >
         <div className="menu__list">
-          <p className="Hello">홍길동 님 반갑습니다!</p>
+          <p className="Hello"><b>홍길동</b>님 반갑습니다!</p>
           <hr id="dividingLine" />
-              <p className="List">이용내역</p>
           {/* {menu.map((data) => (
             <NavItem
               data={data}
@@ -59,7 +58,8 @@ function Navigation(): JSX.Element {
             />
             
           ))} */}
-        <div>
+        <div className="Use_List">
+          <div><b>이용내역</b></div>
           <div>{"F3"}</div>
           <div>{"room4"}</div>
           <div>{"2022-09-05-12:37:00~15:37:00"}</div>

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import { FaUser } from "react-icons/fa";
 import Navigation from "./Navigation";
 
 const Header = () => (
