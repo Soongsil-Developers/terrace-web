@@ -5,11 +5,12 @@ import ReserveModal from "./Modal";
 import MainPage from "./MainPage";
 import "./main.css";
 import Navigation from "./Navigation";
+import Header from "./Header";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-
-    <MainPage />
+    {/* <MainPage /> */}
+    <Header/>
     <div id="mainReserveBtn">
       <span id="floor">2F</span>
       <div id="floorRoom">
