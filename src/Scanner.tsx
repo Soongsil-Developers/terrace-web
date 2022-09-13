@@ -43,7 +43,7 @@ export default function Scanner() {
         {logs.map((log) => (
           <div key={log}>{log}</div>
         ))}
-        <button onClick={() => setLog([])}>CLEAR</button>
+        <button onClick={() => setLog([])}></button>
       </div> */}
     </div>
   );

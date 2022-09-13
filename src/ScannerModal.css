@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-#openScannerModalPossible {
+#openScannerModal {
   position: fixed;
   border: solid rgb(81, 180, 210);
   background-color: rgba(81, 180, 210, 0.2);
@@ -21,7 +21,7 @@
 
 .modal-content {
   border-radius: 35px;
-  width: 80%;
+  width: 90%;
   height: 650px;
   align-items: center;
 }
