@@ -1,0 +1,61 @@
+import "./navigation.css";
+import { useState } from "react";
+//import { withRouter } from "react-router-dom";
+import NavItem from "./navItem";
+
+function Navigation(): JSX.Element {
+  const [menuToggle, setMenuToggle] = useState<boolean>(false);
+  const menu = [
+    { name: "F" },
+    { name: "room" },
+    { name: "check_in_time" },
+    { name: "check_out_time"},
+  ];
+
+  return (
+    // <div id="header">
+    // <div id="headerContents">
+    //   <text id="headerText">테라스 예약 시스템</text>
+    //   </div>
+    //   </div>
+
+    <nav className="navigation__wrapper">
+      <div
+        className={!menuToggle ? "burger__menu" : "x__menu"}
+        onClick={() =>
+          menuToggle ? setMenuToggle(false) : setMenuToggle(true)
+        }
+      >
+        {/* <text id="headerText">테라스 예약 시스템</text> */}
+        <div className="burger_line1"></div>
+        <div className="burger_line2"></div>
+        <div className="burger_line3"></div>
+      </div>
+
+      
+      <div
+        className={[
+          "menu__box",
+          !menuToggle ? "menu__box__hidden" : "menu__box__visible",
+        ].join(" ")}
+      >
+        <div className="menu__list">
+          <p className="Hello">홍길동 님 반갑습니다!</p>
+          <hr id="dividingLine" />
+              <p className="List">이용내역</p>
+          {menu.map((data) => (
+            <NavItem
+              data={data}
+              //key={data.address}
+              offNav={() => setMenuToggle(false)}
+            />
+            
+          ))}
+          <button className="checkOut">퇴실하기</button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Navigation;
