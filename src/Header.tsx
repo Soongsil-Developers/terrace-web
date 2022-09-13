@@ -8,6 +8,7 @@ const Header = () => (
     <div id="headerContents">
       <text id="headerText">테라스 예약 시스템</text>
       <MyPageBtn />
+      {/* <Navigation />  */}
     </div>
   </div>
 );

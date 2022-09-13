@@ -25,6 +25,8 @@ export default function NavItem({ data }: NavProps): JSX.Element {
 
     // <span></span>
     // <text id="room">room4</text>
+    
+    
     <div>
         <div>{"F3"}</div>
         <div>{"room4"}</div>

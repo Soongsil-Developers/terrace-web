@@ -4,9 +4,11 @@ import ReactDOM from "react-dom/client";
 import ReserveModal from "./Modal";
 import MainPage from "./MainPage";
 import "./main.css";
+import Navigation from "./Navigation";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
+
     <MainPage />
     <div id="mainReserveBtn">
       <span id="floor">2F</span>
@@ -39,3 +41,4 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     </div>
   </React.StrictMode>
 );
+
