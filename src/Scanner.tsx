@@ -23,7 +23,7 @@ export default function Scanner() {
   return (
     <div className='app'>
       <div>
-        <QrReader constraints={{ facingMode: "rear" }} />
+        <QrReader constraints={{ facingMode: "user" }} />
         <BarcodeScannerComponent
           onUpdate={barcodeScannerComponentHandleUpdate}
         />
