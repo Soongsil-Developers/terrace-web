@@ -7,20 +7,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Scanner from "./Scanner";
 // import Timer from "./Timer";
 export default function ScannerModal() {
-  const [show, setshow] = useState(false);
-  const [buttonChange, setButtonChange] = useState(false);
-
-  const handleshow = () => setshow(!show);
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(!show);
 
   return (
     <>
       <div id='Container'>
-        <Button id={"openScannerModal"} onClick={handleshow}>
+        <Button id={"openScannerModal"} onClick={handleShow}>
           <FaQrcode id='qrcode' size={40} />
         </Button>
         <Modal
           show={show}
-          onHide={handleshow}
+          onHide={handleShow}
           aria-labelledby='contained-modal-title-vcenter'
           centered>
           <Modal.Header>
@@ -32,13 +30,17 @@ export default function ScannerModal() {
             <Scanner />
           </Modal.Body>
           <Modal.Footer>
-            <Button id='closeBtn' onClick={handleshow}>
+            <Button id='closeBtn' onClick={handleShow}>
               <FaTimes size={25} />
             </Button>
           </Modal.Footer>
         </Modal>
 
-        {/* <Modal>
+        {/* <Modal
+          show={show}
+          onHide={handleShow}
+          aria-labelledby='contained-modal-title-vcenter'
+          centered>
           <Modal.Header>
             <Modal.Title>
               <p className='ModalTitle'>입실 확인</p>
@@ -51,6 +53,11 @@ export default function ScannerModal() {
               확인되었습니다.
             </span>
           </Modal.Body>
+          <Modal.Footer>
+            <Button id='checkBtn' onClick={handleShow}>
+              확인
+            </Button>
+          </Modal.Footer>
         </Modal> */}
       </div>
     </>

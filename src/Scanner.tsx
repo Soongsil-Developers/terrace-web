@@ -4,15 +4,7 @@ import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
 export default function Scanner() {
   const [logs, setLog] = useState<Array<string>>([]);
-  const qrReaderHandleScan = (data: string | null) => {
-    if (data) {
-      setLog([...logs, data]);
-    }
-  };
-
-  const qrReaderHandleError = (error: any) => {
-    setLog([...logs, error.message]);
-  };
+  const [data, setData] = useState<string>("");
 
   const barcodeScannerComponentHandleUpdate = (error: any, result: any) => {
     if (result) {
@@ -23,17 +15,28 @@ export default function Scanner() {
   return (
     <div className='app'>
       <div>
-        <QrReader constraints={{ facingMode: "user" }} />
+        <QrReader
+          constraints={{ facingMode: "user" }}
+          onResult={(result, error) => {
+            if (result) {
+              setData(result.getText);
+            }
+            if (!!error) {
+              console.log(error);
+            }
+          }}
+          containerStyle={{ width: "100%" }}
+        />
+
         <BarcodeScannerComponent
           onUpdate={barcodeScannerComponentHandleUpdate}
         />
       </div>
-      {/* <div>
+      <div>
         {logs.map((log) => (
           <div key={log}>{log}</div>
         ))}
-        <button onClick={() => setLog([])}></button>
-      </div> */}
+      </div>
     </div>
   );
 }
