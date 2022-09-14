@@ -13,12 +13,6 @@ function Navigation(): JSX.Element {
   ];
 
   return (
-    // <div id="header">
-    // <div id="headerContents">
-    //   <text id="headerText">테라스 예약 시스템</text>
-    //   </div>
-    //   </div>
-
     <nav className="navigation__wrapper">
       
       {/* 버거 아이콘 */}
@@ -48,7 +42,7 @@ function Navigation(): JSX.Element {
         ].join(" ")}
       >
         <div className="menu__list">
-          <p className="Hello"><b>홍길동</b>님 반갑습니다!</p>
+          <p className="Hello" color="black"><b>홍길동</b>님 반갑습니다!</p>
           <hr id="dividingLine" />
           {/* {menu.map((data) => (
             <NavItem
