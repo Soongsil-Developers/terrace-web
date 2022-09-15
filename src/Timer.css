@@ -1,0 +1,11 @@
+.mainClock {
+  margin: 0;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainDate {
+  font-size: 18px;
+  text-align: center;
+}
