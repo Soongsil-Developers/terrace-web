@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { FaQrcode, FaTimes, FaCheckSquare } from "react-icons/fa";
 import { QrReader } from "react-qr-reader";
+// import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import Timer from "./Timer";
 import "./ScannerModal.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,22 +11,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function QRScannerModal() {
   const [show, setShow] = useState(false);
   const [check, setCheck] = useState(false);
+  // const [data, setData] = useState<string>("");
 
   const handleShow = () => setShow(!show);
   const handleCheck = () => setCheck(!check);
 
-  const videoStyle: any = {
-    video: {
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      display: "block",
-      overflow: "hidden",
-      position: "absolute",
-      transform: undefined,
-    },
-  };
   return (
     <>
       <div id='Container'>
@@ -55,8 +45,19 @@ export default function QRScannerModal() {
                     console.log(error);
                   }
                 }}
-                videoStyle={videoStyle.video}
+                videoContainerStyle={{ width: "100%" }}
               />
+              {/* <BarcodeScannerComponent
+                onUpdate={(err, result) => {
+                  if (result) {
+                    handleShow();
+                    handleCheck();
+                  }
+                  if (err) {
+                    console.log(err);
+                  }
+                }}
+              /> */}
             </div>
           </Modal.Body>
           <Modal.Footer>
