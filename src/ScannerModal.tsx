@@ -11,8 +11,6 @@ export default function QRScannerModal() {
   const videoStyle = {
     display: "flex",
     position: "relative",
-    height: 450,
-    width: 400,
   };
   const [show, setShow] = useState(false);
   const [check, setCheck] = useState(false);
@@ -37,7 +35,7 @@ export default function QRScannerModal() {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div>
+            <div className='ModalBodyContent'>
               <QrReader
                 constraints={{ facingMode: "environment" }}
                 videoStyle={videoStyle}
@@ -51,10 +49,8 @@ export default function QRScannerModal() {
                   }
                 }}
                 videoContainerStyle={{
-                  width: "100%",
+                  padding: "100px 0px",
                   display: "flex",
-                  padding: "0px",
-                  position: "relative",
                 }}
               />
             </div>
