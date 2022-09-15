@@ -10,7 +10,7 @@
 <p align="center">Tech that We Used</p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/React.js-000000?style=flat-square&logo=React&logoColor=white"/>
+<img src="https://img.shields.io/badge/React.ts-000000?style=flat-square&logo=React&logoColor=white"/>
 <img src="https://img.shields.io/badge/css-EFD1EA?style=flat-square&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/>
 <img src="https://img.shields.io/badge/Bootstrap-3178C6?style=flat-square&logo=Bootstrap&logoColor=white"/>
