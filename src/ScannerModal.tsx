@@ -35,7 +35,7 @@ export default function QRScannerModal() {
           <Modal.Body>
             <div>
               <QrReader
-                constraints={{ facingMode: "user" }}
+                constraints={{ facingMode: "environment" }}
                 onResult={(result, error) => {
                   if (result) {
                     handleShow();
