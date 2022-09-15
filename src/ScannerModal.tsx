@@ -1,26 +1,30 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { FaQrcode, FaTimes } from "react-icons/fa";
+import { FaQrcode, FaTimes, FaCheckSquare } from "react-icons/fa";
+import { QrReader } from "react-qr-reader";
+// import BarcodeScannerComponent from "react-qr-barcode-scanner";
+import Timer from "./Timer";
 import "./ScannerModal.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Scanner from "./Scanner";
-// import Timer from "./Timer";
-export default function ScannerModal() {
-  const [show, setshow] = useState(false);
-  const [buttonChange, setButtonChange] = useState(false);
 
-  const handleshow = () => setshow(!show);
+export default function QRScannerModal() {
+  const [show, setShow] = useState(false);
+  const [check, setCheck] = useState(false);
+  // const [data, setData] = useState<string>("");
+
+  const handleShow = () => setShow(!show);
+  const handleCheck = () => setCheck(!check);
 
   return (
     <>
       <div id='Container'>
-        <Button id={"openScannerModal"} onClick={handleshow}>
+        <Button id={"openScannerModal"} onClick={handleShow}>
           <FaQrcode id='qrcode' size={40} />
         </Button>
         <Modal
           show={show}
-          onHide={handleshow}
+          onHide={handleShow}
           aria-labelledby='contained-modal-title-vcenter'
           centered>
           <Modal.Header>
@@ -29,29 +33,82 @@ export default function ScannerModal() {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Scanner />
+            <div>
+              <QrReader
+                constraints={{ facingMode: "environment" }}
+                onResult={(result, error) => {
+                  if (result) {
+                    handleShow();
+                    handleCheck();
+                  }
+                  if (!!error) {
+                    console.log(error);
+                  }
+                }}
+                videoContainerStyle={{ width: "100%" }}
+              />
+              {/* <BarcodeScannerComponent
+                onUpdate={(err, result) => {
+                  if (result) {
+                    handleShow();
+                    handleCheck();
+                  }
+                  if (err) {
+                    console.log(err);
+                  }
+                }}
+              /> */}
+            </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button id='closeBtn' onClick={handleshow}>
+            <Button id='closeBtn' onClick={handleShow}>
               <FaTimes size={25} />
             </Button>
           </Modal.Footer>
         </Modal>
 
-        {/* <Modal>
+        <Modal
+          show={check}
+          aria-labelledby='contained-modal-title-vcenter'
+          centered>
           <Modal.Header>
             <Modal.Title>
               <p className='ModalTitle'>입실 확인</p>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <span className='ModalBody'>
-              테라스 room{props.roomNumber} 입실이
+            <div id='scannerModalBodyTitle'>
+              테라스 입실이
               <br />
               확인되었습니다.
-            </span>
+              <br />
+              <br />
+              -QR 코드 인증 시간-
+              <Timer />
+            </div>
+            <div id='scannerModalBodyContent'>
+              <FaCheckSquare size={15} /> 사용 가능 시간은
+              <br />
+              QR 코드 인증 시간으로부터
+              <br /> 1시간입니다.
+              <br />
+              <FaCheckSquare size={15} /> 시간 연장을 원할 경우
+              <br />
+              사용 가능 시간 만료 전
+              <br /> QR코드를 스캔해 사용중임을
+              <br /> 인증하면 됩니다.
+            </div>
           </Modal.Body>
-        </Modal> */}
+          <Modal.Footer>
+            <Button
+              id='checkBtn'
+              onClick={() => {
+                setCheck(false);
+              }}>
+              확인
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </>
   );
