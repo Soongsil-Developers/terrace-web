@@ -19,13 +19,6 @@
   cursor: pointer;
 }
 
-.modal-content {
-  border-radius: 35px;
-  width: 90%;
-  height: 650px;
-  align-items: center;
-}
-
 .ModalTitle {
   font-weight: 800;
   font-size: 20px;
@@ -42,6 +35,11 @@
   padding-bottom: 10%;
 }
 
+#modalContents {
+  display: flex;
+  flex-direction: column;
+}
+
 #scannerModalBodyTitle {
   padding-top: 10px;
   display: flexbox;
@@ -55,10 +53,6 @@
   font-size: 20px;
   padding-top: 10px;
   text-align: left;
-}
-
-.modal-footer {
-  width: 100%;
 }
 
 #closeBtn {
