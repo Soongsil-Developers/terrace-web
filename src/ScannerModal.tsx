@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { FaQrcode, FaTimes, FaCheckSquare } from "react-icons/fa";
 import { QrReader } from "react-qr-reader";
-import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import Timer from "./Timer";
 import "./ScannerModal.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +10,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function QRScannerModal() {
   const [show, setShow] = useState(false);
   const [check, setCheck] = useState(false);
-  const [data, setData] = useState<string>("");
 
   const handleShow = () => setShow(!show);
   const handleCheck = () => setCheck(!check);
@@ -44,12 +42,6 @@ export default function QRScannerModal() {
                   if (!!error) {
                     console.log(error);
                   }
-                }}
-              />
-              <BarcodeScannerComponent
-                onUpdate={(err, result) => {
-                  if (result) setData(result.getText);
-                  else setData("Not Found");
                 }}
               />
             </div>
