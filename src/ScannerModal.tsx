@@ -14,6 +14,18 @@ export default function QRScannerModal() {
   const handleShow = () => setShow(!show);
   const handleCheck = () => setCheck(!check);
 
+  const videoStyle: any = {
+    video: {
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      display: "block",
+      overflow: "hidden",
+      position: "absolute",
+      transform: undefined,
+    },
+  };
   return (
     <>
       <div id='Container'>
@@ -43,6 +55,7 @@ export default function QRScannerModal() {
                     console.log(error);
                   }
                 }}
+                videoStyle={videoStyle.video}
               />
             </div>
           </Modal.Body>
