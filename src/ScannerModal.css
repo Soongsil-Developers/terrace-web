@@ -19,13 +19,6 @@
   cursor: pointer;
 }
 
-.modal-content {
-  border-radius: 35px;
-  width: 90%;
-  height: 650px;
-  align-items: center;
-}
-
 .ModalTitle {
   font-weight: 800;
   font-size: 20px;

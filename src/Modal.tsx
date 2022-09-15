@@ -29,6 +29,7 @@ export default function ReserveModal(props: any) {
       </Button>
 
       <Modal
+        id="modal-content"
         show={showPossible}
         onHide={handleShowPossible}
         aria-labelledby="contained-modal-title-vcenter"
