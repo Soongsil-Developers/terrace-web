@@ -38,7 +38,7 @@ export default function QRScannerModal() {
           <Modal.Body>
             <div className="ModalBodyContent">
               <QrReader
-                constraints={{ facingMode: "user" }}
+                constraints={{ facingMode: "environment" }}
                 videoStyle={videoStyle}
                 onResult={(result, error) => {
                   if (result) {
