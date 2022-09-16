@@ -47,7 +47,6 @@ function Navigation(): JSX.Element {
 
         <div className="Use_List">
           <div><b>이용내역</b></div>
-          <List/>
         </div>
         
           <button className="checkOut">퇴실하기</button>
