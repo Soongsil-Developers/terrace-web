@@ -18,7 +18,7 @@
     .burger__menu,
     .x__menu {
         display: block;
-        margin-left: 40px;
+        margin-left: 30px;
         cursor: pointer;
     }
   
@@ -94,16 +94,16 @@
 
 
 .Hello{
-  padding: 10px;
+  padding-left: 20px;
+  /* padding: 30px; */
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* background-color: aliceblue; */
-}
+  flex-direction: column;
+} 
 
 .Use_List{
   padding-left: 20px;
-  padding: 30px;
+  /* padding: 30px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -124,9 +124,9 @@
   }
 
 
-  .dividingLine {
+.dividingLine {
     margin-top: 0%;
     margin-bottom: 0%;
     margin-left: 2%;
     margin-right: 2%;
-  }
+}
