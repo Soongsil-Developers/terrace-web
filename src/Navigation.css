@@ -7,9 +7,7 @@
     top: 0;
     z-index: 9999;
     background-color: #50b4d2;
-    /* border-bottom: 1px solid rgba(44, 44, 44, 0.233);
-    box-shadow: 0px 2px 3px rgba(44, 44, 44, 0.137); */
-}
+   }
 
 .menu__list {
     display: flex;
@@ -20,7 +18,7 @@
     .burger__menu,
     .x__menu {
         display: block;
-        margin-left: 40px;
+        margin-left: 30px;
         cursor: pointer;
     }
   
@@ -95,22 +93,28 @@
   }
 
 
-
-
 .Hello{
-  padding: 15px;
+  padding-left: 20px;
+  /* padding: 30px; */
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* background-color: aliceblue; */
-}
+  flex-direction: column;
+  white-space: pre-line;
+} 
 
 .Use_List{
-  /*padding-left: 20px;*/
-  padding: 20px;
+  padding-left: 20px;
+  /* padding: 30px; */
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.info{
+  padding-top: 10px;
+  padding-left: 5px;
 }
 
 .checkOut{
@@ -122,3 +126,11 @@
     justify-content: center; */
 
   }
+
+
+.dividingLine {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
