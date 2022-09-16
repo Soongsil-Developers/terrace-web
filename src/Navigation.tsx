@@ -43,10 +43,17 @@ function Navigation(): JSX.Element {
       >
         <div className="menu__list">
           <p className="Hello"><b>홍길동</b>님 반갑습니다!</p>
-          <hr/>
+          <hr className="dividingLine"/>
 
         <div className="Use_List">
           <div><b>이용내역</b></div>
+          
+          <div className="info">
+            <div>{"F3"}</div>
+            <div>{"room4"}</div>
+            <div>{"2022-09-05"}</div>
+            <div>{"12:37~15:37"}</div>
+          </div>
         </div>
         
           <button className="checkOut">퇴실하기</button>
