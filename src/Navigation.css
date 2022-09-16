@@ -16,7 +16,7 @@
     justify-content: center;
 }
   
-@media (max-width: 1499px) {
+@media (max-width: 1799px) {
     .burger__menu,
     .x__menu {
         display: block;
@@ -69,7 +69,7 @@
     }
   }
   
-@media (min-width: 1500px) {
+@media (min-width: 1800px) {
     .navigation__wrapper {
         flex-direction: row;
         align-items: center;

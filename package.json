@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.1",
+    "i": "^0.3.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-qr-barcode-scanner": "^1.0.6",
-    "react-qr-reader": "^3.0.0-beta-1"
+    "react-qr-reader": "^3.0.0-beta-1",
+    "react-table": "^7.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

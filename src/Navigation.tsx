@@ -1,6 +1,6 @@
-import "./navigation.css?after";
+import "./Navigation.css?after";
 import { useState } from "react";
-// import NavItem from "./navItem";
+
 
 function Navigation(): JSX.Element {
   const [menuToggle, setMenuToggle] = useState<boolean>(false);
@@ -42,21 +42,12 @@ function Navigation(): JSX.Element {
         ].join(" ")}
       >
         <div className="menu__list">
-          <p className="Hello" color="black"><b>홍길동</b>님 반갑습니다!</p>
-          <hr id="dividingLine" />
-          {/* {menu.map((data) => (
-            <NavItem
-              data={data}
-              //key={data.address}
-              // offNav={() => setMenuToggle(false)}
-            />
-            
-          ))} */}
+          <p className="Hello"><b>홍길동</b>님 반갑습니다!</p>
+          <hr/>
+
         <div className="Use_List">
           <div><b>이용내역</b></div>
-          <div>{"F3"}</div>
-          <div>{"room4"}</div>
-          <div>{"2022-09-05-12:37:00~15:37:00"}</div>
+          <List/>
         </div>
         
           <button className="checkOut">퇴실하기</button>
