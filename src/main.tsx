@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from './App'
 import ReserveModal from "./Modal";
-import MainPage from "./MainPage";
 import "./main.css";
+import Navigation from "./Navigation";
+import Header from "./Header";
 import ScannerModal from "./ScannerModal";
 import Timer from "./Timer";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <MainPage />
+    <Header />
     <div>
       <Timer />
     </div>
@@ -44,3 +44,4 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     </div>
   </React.StrictMode>
 );
+
