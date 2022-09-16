@@ -42,7 +42,12 @@ function Navigation(): JSX.Element {
         ].join(" ")}
       >
         <div className="menu__list">
-          <p className="Hello"><b>홍길동</b>님 반갑습니다!</p>
+          <p className="Hello">
+            <div>
+            <div><b>홍길동</b>님</div>
+            <div>반갑습니다!</div>
+            </div>
+            </p>
           <hr className="dividingLine"/>
 
         <div className="Use_List">

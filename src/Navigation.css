@@ -99,6 +99,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  white-space: pre-line;
 } 
 
 .Use_List{
@@ -107,9 +108,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .info{
+  padding-top: 10px;
   padding-left: 5px;
 }
 
