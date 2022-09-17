@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FaUser, FaLock } from "react-icons/fa";
-// import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./LoginPage.css";
 
 const LoginPage = () => {
@@ -14,7 +14,7 @@ const LoginPage = () => {
         <div id="inputLoginInfo">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <FaUser size="25" color="#A4A4A4" />
-            <Form.Control type="email" placeholder="U-Saint ID" />
+            <Form.Control placeholder="U-Saint ID" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -22,9 +22,11 @@ const LoginPage = () => {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           <div id="loginBtnDiv">
-            <Button id="loginBtn" variant="primary" type="submit">
-              <p id="loginBtnText">로그인</p>
-            </Button>
+            <Link to="/MainPage">
+              <Button id="loginBtn" variant="primary" type="submit">
+                <p id="loginBtnText">로그인</p>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
