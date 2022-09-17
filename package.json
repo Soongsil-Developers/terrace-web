@@ -18,7 +18,8 @@
     "react-qr-barcode-scanner": "^1.0.6",
     "react-qr-reader": "^3.0.0-beta-1",
     "react-router-dom": "^6.4.0",
-    "react-table": "^7.8.0"
+    "react-table": "^7.8.0",
+    "react-web-qr-reader": "^1.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
