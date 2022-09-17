@@ -47,3 +47,5 @@
 1. 로그인~~(사진 첨부하기)
 2. 자리 확인~~(사진 첨부하기)
 3. ~~~(사진 첨부하기)
+
+![테라스 (2)](https://user-images.githubusercontent.com/94737714/190843971-cba16d33-3c83-4a81-b2fb-cb406a79b3d3.gif)
