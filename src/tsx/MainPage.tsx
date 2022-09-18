@@ -1,8 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import ReserveModal from "./Modal";
 import "../css/main.css";
-import Navigation from "./Navigation";
 import Header from "./Header";
 import ScannerModal from "./ScannerModal";
 import Timer from "./Timer";
