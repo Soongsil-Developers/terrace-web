@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./Timer.css";
+import "../css/Timer.css";
 
 export default function Timer() {
   const [timer, setTimer] = useState("00:00");

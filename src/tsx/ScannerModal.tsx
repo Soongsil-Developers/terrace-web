@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import { FaQrcode, FaTimes, FaCheckSquare } from "react-icons/fa";
 import { QrReader } from "react-qr-reader";
 import Timer from "./Timer";
-import "./ScannerModal.css";
+import "../css/ScannerModal.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function QRScannerModal() {
