@@ -1,0 +1,59 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#loginPage {
+  margin-top: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginTitle {
+  font-size: 24px;
+  color: #a4a4a4;
+  display: flex;
+  justify-content: center;
+}
+
+.mb-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formBasicEmail {
+  height: 25px;
+  width: 70%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 15px;
+}
+
+#formBasicPassword {
+  height: 25px;
+  width: 70%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 15px;
+}
+
+#loginBtnDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#loginBtn {
+  border: none;
+  border-radius: 10px;
+  background-color: #50b4d2;
+  width: 291px;
+  height: 41px;
+}
+
+#loginBtnText {
+  margin: 0px;
+  color: white;
+}

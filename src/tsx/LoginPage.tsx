@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FaUser, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "./LoginPage.css";
+import "../css/LoginPage.css";
 
 const LoginPage = () => {
   return (

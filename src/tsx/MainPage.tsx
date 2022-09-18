@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import ReserveModal from "./Modal";
-import "./main.css";
+import "../css/main.css";
 import Navigation from "./Navigation";
 import Header from "./Header";
 import ScannerModal from "./ScannerModal";
