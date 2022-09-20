@@ -1,5 +1,5 @@
 import ReserveModal from "./Modal";
-import "../css/main.css";
+import "../css/MainPage.css";
 import ScannerModal from "./ScannerModal";
 import Timer from "./Timer";
 import Navigation from "./Navigation";
@@ -7,7 +7,7 @@ export default function MainPage() {
   return (
     <>
       <Navigation />
-      <div>
+      <div id="timer">
         <Timer />
       </div>
       <div id="mainReserveBtn">

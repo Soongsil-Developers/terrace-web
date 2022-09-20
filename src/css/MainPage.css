@@ -1,8 +1,15 @@
+#timer {
+  position: sticky;
+  top: 70px;
+}
+
 #mainReserveBtn {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: sticky;
+  bottom: 50px;
 }
 
 #floor {
