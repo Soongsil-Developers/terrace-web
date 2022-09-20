@@ -18,26 +18,21 @@ function Navigation(): JSX.Element {
         className={!menuToggle ? "burger__menu" : "x__menu"}
         onClick={() =>
           menuToggle ? setMenuToggle(false) : setMenuToggle(true)
-        }
-      >
+        }>
         <div className="burger_line1" color="white"></div>
         <div className="burger_line2"></div>
         <div className="burger_line3"></div>
       </div>
 
-      {/* 헤더 및 타이틀을 여기로 옮겨도 될 듯함 */}
-      {/* <div className="header">
-        <div className="headerContents">
-        <text className="headerText">테라스 예약 시스템</text>
-        </div>
-      </div> */}
+      <div className="headerText">
+        <text className="headerTextTitle">테라스 예약 시스템</text>
+      </div>
 
       <div
         className={[
           "menu__box",
           !menuToggle ? "menu__box__hidden" : "menu__box__visible", //버튼 모양
-        ].join(" ")}
-      >
+        ].join(" ")}>
         <div className="menu__list">
           <p className="Hello">
             <div>
