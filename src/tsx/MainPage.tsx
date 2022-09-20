@@ -1,13 +1,12 @@
 import ReserveModal from "./Modal";
 import "../css/main.css";
-import Header from "./Header";
 import ScannerModal from "./ScannerModal";
 import Timer from "./Timer";
-
+import Navigation from "./Navigation";
 export default function MainPage() {
   return (
     <>
-      <Header />
+      <Navigation />
       <div>
         <Timer />
       </div>
