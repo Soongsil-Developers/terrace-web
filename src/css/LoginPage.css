@@ -1,15 +1,19 @@
 html,
 body {
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 #root {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#inputLoginInfo {
+  width: 100vw;
 }
 
 #loginTitle {
@@ -54,7 +58,7 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #50b4d2;
-  width: 291px;
+  width: 80vw;
   height: 41px;
 }
 
