@@ -12,6 +12,7 @@
 .menu__list {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 @media (max-width: 1799px) {
