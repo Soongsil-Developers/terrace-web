@@ -10,7 +10,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  margin-top: 70px;
   align-items: center;
 }
 #inputLoginInfo {
@@ -25,6 +26,8 @@ body {
 }
 
 .mb-3 {
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +62,7 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #50b4d2;
-  width: 80vw;
+  width: 70vw;
   height: 41px;
 }
 

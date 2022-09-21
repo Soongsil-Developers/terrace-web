@@ -1,13 +1,13 @@
 #timer {
   position: sticky;
-  top: 70px;
+  top: 20px;
 }
 
 #mainReserveBtn {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   position: sticky;
   bottom: 50px;
 }
