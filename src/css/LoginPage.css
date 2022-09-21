@@ -8,12 +8,15 @@ body {
 #root {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  margin-top: 70px;
   align-items: center;
 }
+
+form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 #inputLoginInfo {
   width: 100vw;
 }
