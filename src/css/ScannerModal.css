@@ -9,6 +9,8 @@
 }
 
 #openScannerModal {
+  position: fixed;
+  bottom: 0px;
   border: solid rgb(81, 180, 210);
   background-color: rgba(81, 180, 210, 0.2);
   width: 80px;

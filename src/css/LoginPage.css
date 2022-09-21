@@ -8,11 +8,15 @@ body {
 #root {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
+
+form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 #inputLoginInfo {
   width: 100vw;
 }
@@ -25,6 +29,8 @@ body {
 }
 
 .mb-3 {
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +65,7 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #50b4d2;
-  width: 80vw;
+  width: 70vw;
   height: 41px;
 }
 
