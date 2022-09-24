@@ -2,12 +2,13 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  height: calc(var(--vh) * 100);
 }
 
 #root {
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh) * 100);
   align-items: center;
 }
 
