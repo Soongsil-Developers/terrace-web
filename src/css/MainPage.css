@@ -1,6 +1,7 @@
 #mainPage {
   position: sticky;
   top: 75px;
+  margin-top: 75px;
 }
 #mainReserveBtn {
   width: 100%;
