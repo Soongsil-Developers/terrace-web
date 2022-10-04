@@ -1,3 +1,7 @@
+#mainPage {
+  margin-top: 75px;
+}
+
 #mainReserveBtn {
   width: 100%;
   display: flex;
