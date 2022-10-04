@@ -1,11 +1,3 @@
-#mainPage {
-  margin-top: 70px;
-}
-#timer {
-  position: sticky;
-  top: 20px;
-}
-
 #mainReserveBtn {
   width: 100%;
   display: flex;
