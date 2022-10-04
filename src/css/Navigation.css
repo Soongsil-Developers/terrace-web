@@ -9,12 +9,6 @@
   background-color: #50b4d2;
 }
 
-.menu__list {
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
 @media (max-width: 1799px) {
   .burger__menu,
   .x__menu {
@@ -50,7 +44,7 @@
     position: fixed;
     left: 0;
     top: 75px;
-    background-color: #50b4d2;
+    background-color: white;
     z-index: 1;
     box-shadow: 2px 0px 1px rgba(44, 44, 44, 0.137);
   }
@@ -95,22 +89,23 @@
 }
 
 .Hello {
-  padding-left: 20px;
-  /* padding: 30px; */
+  padding: 10px 20px;
   display: flex;
+  font-size: larger;
   justify-content: center;
   flex-direction: column;
-  white-space: pre-line;
+  margin-bottom: 0px;
+  padding-right: 0px;
 }
 
 .Use_List {
-  padding-left: 20px;
-  /* padding: 30px; */
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 20px;
-  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 60%);
+  margin: 10px;
+  font-size: large;
 }
 
 .info {
@@ -118,20 +113,9 @@
   padding-left: 5px;
 }
 
-.checkOut {
-  background-color: white;
-  border-radius: 30px;
-  padding: auto;
-  /* width: fit-content;
-    display: flex;
-    justify-content: center; */
-}
-
 .dividingLine {
-  margin-top: 0%;
-  margin-bottom: 0%;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 0px;
+  color: black;
 }
 
 .headerText {
@@ -144,5 +128,15 @@
 
 .headerTextTitle {
   color: white;
-  font-size: large;
+  font-size: larger;
+}
+
+#LogoutBtn {
+  background-color: #d5d5d5;
+  border: none;
+  cursor: pointer;
+  margin-left: 105px;
+  bottom: 0;
+  font-size: medium;
+  border-radius: 5px;
 }

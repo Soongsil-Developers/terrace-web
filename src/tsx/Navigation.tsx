@@ -1,6 +1,6 @@
 import "../css/Navigation.css?after";
 import { useState } from "react";
-
+import CheckoutModal from "./CheckoutModal";
 function Navigation(): JSX.Element {
   const [menuToggle, setMenuToggle] = useState<boolean>(false);
   //초기값은 false
@@ -40,6 +40,7 @@ function Navigation(): JSX.Element {
                 <b>홍길동</b>님
               </div>
               <div>반갑습니다!</div>
+              <button id="LogoutBtn">로그아웃</button>
             </div>
           </p>
           <hr className="dividingLine" />
@@ -55,9 +56,8 @@ function Navigation(): JSX.Element {
               <div>{"2022-09-05"}</div>
               <div>{"12:37~15:37"}</div>
             </div>
+            <CheckoutModal />
           </div>
-
-          <button className="checkOut">퇴실하기</button>
         </div>
       </div>
     </nav>
