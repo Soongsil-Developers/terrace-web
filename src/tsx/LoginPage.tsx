@@ -1,33 +1,31 @@
-import { React, useState } from "react";
+import React from "react";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FaUser, FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 import "../css/LoginPage.css";
 
-const LoginCheck = () => {
-  const navigate = useNavigate();
-
-  fetch("http://52.79.128.20:8080/v1/auth/login", {
-    method: "POST",
-    headers: {
-      "Content-type": "application/json",
-    },
-    body: JSON.stringify({
-      password: "string",
-      studentId: "20213111",
-    }),
-  })
-    // .then(response => console.log("response"))
-    .then((response) => response.json())
-    .then((response) => {
-      if (response) {
-        localStorage.setItem("wtw-token", response.token);
-        navigate("/MainPage");
-      } else if (response) {
-        alert("회원 정보가 올바르지 않습니다.");
-      }
+const LoginCheck = async () => {
+  console.log("HERE!12");
+  try {
+    console.log("HERE!14");
+    const api = axios.create({ baseURL: "http://52.79.128.20:8080" });
+    const result = await api.post("/v1/auth/login", {
+      password: "asdfasdf",
+      studentId: "asdfasdf",
     });
+    console.log("HERE!25");
+    console.log({ result });
+    const responseBody = result.data;
+    localStorage.setItem("wtw-token", responseBody.accessToken);
+    // navigate("/MainPage");
+  } catch (e: any) {
+    console.error("ASDFASDF");
+    console.error({ e });
+    alert("회원 정보가 올바르지 않습니다.");
+  }
 };
 
 const LoginPage = () => {
@@ -78,9 +76,9 @@ const LoginPage = () => {
           </Form.Group>
           <div id="loginBtnDiv">
             {/* <Link to="/MainPage"> */}
-            <button id="loginBtn" type="submit" onClick={LoginCheck}>
+            <div id="loginBtn" onClick={LoginCheck}>
               <p id="loginBtnText">로그인</p>
-            </button>
+            </div>
             {/* </Link> */}
           </div>
         </div>
