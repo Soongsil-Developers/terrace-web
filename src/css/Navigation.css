@@ -1,4 +1,5 @@
 .navigation__wrapper {
+  position: fixed;
   width: 100%;
   height: 75px;
   display: flex;
@@ -144,4 +145,5 @@
 .headerTextTitle {
   color: white;
   font-size: large;
+  margin: 0;
 }

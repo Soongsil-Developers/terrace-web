@@ -25,7 +25,7 @@ function Navigation(): JSX.Element {
       </div>
 
       <div className="headerText">
-        <text className="headerTextTitle">테라스 예약 시스템</text>
+        <p className="headerTextTitle">테라스 예약 시스템</p>
       </div>
 
       <div

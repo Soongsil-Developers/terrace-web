@@ -1,11 +1,15 @@
-.mainClock {
-  margin: 0;
-  font-size: 45px;
+.Clock {
+  padding-top: 20px;
+  padding-bottom: 2px;
+  font-size: 35px;
   font-weight: bold;
   text-align: center;
+  color: rgb(70, 70, 70);
 }
 
-.mainDate {
-  font-size: 18px;
+.Date {
+  font-size: 22px;
   text-align: center;
+  color: rgb(70, 70, 70);
+  padding-bottom: 5px;
 }
