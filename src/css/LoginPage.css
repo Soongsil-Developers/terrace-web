@@ -68,6 +68,9 @@ form {
   background-color: #50b4d2;
   width: 70vw;
   height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #loginBtnText {
